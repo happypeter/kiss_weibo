@@ -1,0 +1,11 @@
+!!!
+%html
+  %head
+    %meta(content='text/html;charset=UTF-8' http-equiv='content-type')
+    %title="weibo.hc"
+    %link{:href => "/screen.css", :rel =>"stylesheet", :type => "text/css", :media => "screen" }
+  %body
+    %div{:class => 'container'}
+      %a{:href => (session[:uid] ? "/logout" : "/connect")}=(session[:uid] ? "logout" : "connect")
+      = yield
+  %footer

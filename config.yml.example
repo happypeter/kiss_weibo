@@ -1,0 +1,9 @@
+# get the below at http://open.weibo.com/webmaster
+# change all to your own
+api_key: '9418699562'
+api_secret: '1144d4f3c9ec5a3220757b9030d4cf24'
+redirect_uri: 'http://weibo.happycasts.net/callback'
+
+# for auth protection
+username: 'secret'
+password: 'secret'

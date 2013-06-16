@@ -1,0 +1,10 @@
+%p
+  =@status_body
+
+%img{:src => @poster_link,  :alt => "", :class => 'pic'}
+
+%a{:href => "/post_status/#{@episode_id}"}
+  POST IT to
+
+= @user.name
+
