@@ -37,6 +37,7 @@ get '/episodes/:id' do
   haml :show
 end
 
+# FIXME: should be a POST here
 get '/post_status/:id' do
   response = RestClient.get "happycasts.net/episodes/#{params[:id]}.json"
   response_hash = MultiJson.load(response)
